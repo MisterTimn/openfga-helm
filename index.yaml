@@ -30,6 +30,37 @@ entries:
         fingerprint: 8E9B315F6C22E339959DA77B35CCF4BDC9F58F2A
         url: https://openfga.github.io/helm-charts/pgp-public-key.asc
     apiVersion: v2
+    appVersion: v1.8.2
+    created: "2024-12-16T10:23:38.731044556Z"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 12.12.10
+    - condition: mysql.enabled
+      name: mysql
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 9.6.0
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.13.3
+    description: A Kubernetes Helm chart for the OpenFGA project.
+    digest: 90a1772c833f7a7bc6df60fa8aa6d4bbb76aad64620f7cc0c283d9fc741b0e2a
+    home: https://openfga.github.io/helm-charts
+    icon: https://github.com/openfga/community/raw/main/brand-assets/icon/color/openfga-icon-color.svg
+    name: openfga
+    type: application
+    urls:
+    - https://github.com/MisterTimn/openfga-helm/releases/download/openfga-0.2.19/openfga-0.2.19.tgz
+    version: 0.2.19
+  - annotations:
+      artifacthub.io/license: Apache-2.0
+      artifacthub.io/signKey: |
+        fingerprint: 8E9B315F6C22E339959DA77B35CCF4BDC9F58F2A
+        url: https://openfga.github.io/helm-charts/pgp-public-key.asc
+    apiVersion: v2
     appVersion: v1.6.2
     created: "2024-11-08T10:40:26.655609141Z"
     dependencies:
@@ -117,4 +148,4 @@ entries:
     urls:
     - https://github.com/MisterTimn/openfga-helm/releases/download/openfga-0.2.14/openfga-0.2.14.tgz
     version: 0.2.14
-generated: "2024-11-08T10:40:26.655622456Z"
+generated: "2024-12-16T10:23:38.731060016Z"
